@@ -1,0 +1,17 @@
+snippet exportasyncfunc "export async function" b
+export async function $1($2): $3 {
+  $4
+}
+endsnippet
+
+snippet describe "jest describe" b
+describe("$1", (): void => {
+  $2
+})
+endsnippet
+
+snippet test "jest test"
+test("$1", ${2:async }(): $3 => {
+  $4
+})
+endsnippet

@@ -1,0 +1,7 @@
+snippet secretEnv "value from secret in kube config"
+- name: ${1:name}
+  valueFrom:
+    secretKeyRef:
+      name: ${2:secretRef}
+      key: ${3:secretKey}
+endsnippet

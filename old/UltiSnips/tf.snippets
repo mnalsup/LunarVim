@@ -1,0 +1,11 @@
+snippet var "terraform variable" b
+variable "${1:name}" {
+  type = "${2:string}"
+}
+endsnippet
+
+snippet res "terraform resource" b
+resource "${1:type}" "${2:name}" {
+  $3
+}$4
+endsnippet
